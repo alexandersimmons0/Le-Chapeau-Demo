@@ -45,6 +45,7 @@ public class Menu : MonoBehaviourPunCallbacks
     }
 
     public override void OnConnectedToMaster(){
+        Debug.Log("connected to master");
         createRoomButton.interactable = true;
         joinRoomButton.interactable = true;
     }
